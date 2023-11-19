@@ -1,7 +1,9 @@
 # Final Project
 
 Name of your final project: Nail Salon Appointment System
+
 Group: SE-2217
+
 Team members: Dariga Sekerbek, Diana Narynbekova
 
 Comprehensive Project Documentation: Nail Salon Appointment System
@@ -32,17 +34,17 @@ The NotificationManager class uses the Singleton Pattern. This design style make
 ## Code components
 
 3.1 Interfaces
-• AppointmentCommand: Defines the execute() method for executing appointment-related commands.
-• AppointmentObserver: Specifies the update(String message) method for notifying observers about appointment changes.
-• NailMaster: Describes the interface for booking nail appointments.
+- AppointmentCommand: Defines the execute() method for executing appointment-related commands.
+- AppointmentObserver: Specifies the update(String message) method for notifying observers about appointment changes.
+- NailMaster: Describes the interface for booking nail appointments.
 
 3.2 Classes
-• CashPayment and CreditCardPayment: Use the PaymentStrategy interface for payments made with cash and credit cards, respectively. A credit card number is included with the payment as a means of identification.
-• GelNailDecorator: Participates in regular nail appointments by incorporating gel nail design as a decorator for NailMaster.
-• NotificationManager: Oversees observers, applies the AppointmentObserver interface, and alerts observers to modifications in appointments.
-• PaymentStrategyFactory: Based on user input, this application uses the Factory Pattern to generate instances of the PaymentStrategy interface.
-• RegularNailMaster: This application uses the NailMaster interface to schedule routine nail visits.
-• ThankYouCommand: Expresses gratitude to the user by implementing the AppointmentCommand interface. The user's name is one of the customization parameters.
+- CashPayment and CreditCardPayment: Use the PaymentStrategy interface for payments made with cash and credit cards, respectively. A credit card number is included with the payment as a means of identification.
+- GelNailDecorator: Participates in regular nail appointments by incorporating gel nail design as a decorator for NailMaster.
+- NotificationManager: Oversees observers, applies the AppointmentObserver interface, and alerts observers to modifications in appointments.
+- PaymentStrategyFactory: Based on user input, this application uses the Factory Pattern to generate instances of the PaymentStrategy interface.
+- RegularNailMaster: This application uses the NailMaster interface to schedule routine nail visits.
+- ThankYouCommand: Expresses gratitude to the user by implementing the AppointmentCommand interface. The user's name is one of the customization parameters.
 
 3.3 Main Class (Main)
 The Main class serves as the entry point for the application, orchestrating the user input, appointment booking process, payment, and notifications. It demonstrates the integration of various design patterns to create a cohesive and extensible system.
@@ -55,3 +57,4 @@ The booking process involves creating a NailMaster instance (potentially decorat
 
 ## Conclusion
 The Nail Salon Appointment System demonstrates the effective use of design patterns to enhance modularity, flexibility, and maintainability. The structured implementation allows for easy extension with new features and patterns in the future. The clean separation of concerns and encapsulation of functionalities contribute to the readability and scalability of the code
+
